@@ -1,0 +1,12 @@
+---
+- name: Quiz 3
+  hosts: target
+
+  tasks:
+  - name: FTP Server Installation (vsftpd)
+    include_role:
+      name: ftp-server-installation
+
+  - name: FTP Client test
+    include_role:
+      name: ftp-client-test
